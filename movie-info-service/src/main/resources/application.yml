@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: movie-info-service
+
+server:
+  port: 8082
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+
+api:
+  key: 2246a013d339070a01059f8bcffa8210
