@@ -9,5 +9,6 @@
     <file url="file://$PROJECT_DIR$/movie-info-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ratings-data-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ratings-data-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-config-server/src/main/java" charset="UTF-8" />
   </component>
 </project>

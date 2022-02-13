@@ -24,6 +24,11 @@ public class CatalogItemService {
                     @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "5"),
                     @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "50"),
                     @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "5000")
+            },
+            threadPoolKey = "movieInfoPool",
+            threadPoolProperties = {
+                @HystrixProperty(name = "coreSize", value = "2"),
+                @HystrixProperty(name = "maxQueueSize", value = "5")
             }
     )
     public CatalogItem getCatalogItem(Rating rating) {
