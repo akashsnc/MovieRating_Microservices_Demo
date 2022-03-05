@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: config-client
+  config:
+    import: configserver:http://localhost:8888
+
+management.endpoints.web.exposure.include: '*'
