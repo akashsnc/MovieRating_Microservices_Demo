@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/movie-catalog-service/movie-catalog-service.iml" filepath="$PROJECT_DIR$/movie-catalog-service/movie-catalog-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/movie-info-service/movie-info-service.iml" filepath="$PROJECT_DIR$/movie-info-service/movie-info-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ratings-data-service/ratings-data-service.iml" filepath="$PROJECT_DIR$/ratings-data-service/ratings-data-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-config-client/spring-cloud-config-client.iml" filepath="$PROJECT_DIR$/spring-cloud-config-client/spring-cloud-config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-config-server/spring-cloud-config-server.iml" filepath="$PROJECT_DIR$/spring-cloud-config-server/spring-cloud-config-server.iml" />
     </modules>
   </component>

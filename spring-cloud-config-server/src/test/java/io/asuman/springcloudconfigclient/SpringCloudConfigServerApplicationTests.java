@@ -1,4 +1,4 @@
-package io.asuman.springcloudconfigserver;
+package io.asuman.springcloudconfigclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

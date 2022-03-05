@@ -1,4 +1,4 @@
-package io.asuman.springcloudconfigserver;
+package io.asuman.springcloudconfigclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

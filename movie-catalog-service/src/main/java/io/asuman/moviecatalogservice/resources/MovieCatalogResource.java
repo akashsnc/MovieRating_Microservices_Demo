@@ -5,6 +5,7 @@ import io.asuman.moviecatalogservice.models.UserRating;
 import io.asuman.moviecatalogservice.services.CatalogItemService;
 import io.asuman.moviecatalogservice.services.UserRatingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,11 @@ public class MovieCatalogResource {
     private final CatalogItemService catalogItemService;
     private final UserRatingService userRatingService;
 
+    @Value("${my.greeting: default value}")
+    private String greetingMessage;
+    @Value("${db.connection: default connection}")
+    private String dbConn;
+
     @Autowired
     public MovieCatalogResource(CatalogItemService catalogItemService, UserRatingService userRatingService) {
         this.catalogItemService = catalogItemService;
@@ -29,6 +35,11 @@ public class MovieCatalogResource {
     public List<CatalogItem> getCatalog(@PathVariable String userId) {
         UserRating userRating = userRatingService.getUserRating(userId);
         return userRating.getUserRating().stream().map(catalogItemService::getCatalogItem).collect(Collectors.toList());
+    }
+
+    @GetMapping("/configValues")
+    public String getConfigServerValues() {
+        return "Greeting Msg: " + greetingMessage + ", Db Conn: " + dbConn;
     }
 }
 
